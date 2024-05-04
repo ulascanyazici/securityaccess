@@ -1,0 +1,42 @@
+﻿  SecurityAccess.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\utility(301,68): error C2512: 'User::User': kullanılabilir uygun varsayılan oluşturucu yok
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\utility(301,68): message : '()' bağımsız değişken listesi eşlenmeye çalışılırken
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\utility(305,15): message : derlenen şablon işlevi 'std::pair<const std::string,User>::pair<std::tuple<_Ty &&>,std::tuple<>,0,>(_Tuple1 &,_Tuple2 &,std::integer_sequence<size_t,0>,std::integer_sequence<size_t>)' örneği oluşturma başvurusuna bakın
+          with
+          [
+              _Ty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+              _Tuple1=std::tuple<std::basic_string<char,std::char_traits<char>,std::allocator<char>> &&>,
+              _Tuple2=std::tuple<>
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xmemory(719,82): message : derlenen şablon işlevi 'std::pair<const std::string,User>::pair<_Ty&&,>(std::piecewise_construct_t,std::tuple<_Ty &&>,std::tuple<>)' örneği oluşturma başvurusuna bakın
+          with
+          [
+              _Ty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\list(586,25): message : derlenen şablon işlevi 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,const std::piecewise_construct_t&,std::tuple<std::basic_string<char,std::char_traits<char>,std::allocator<char>> &&>,std::tuple<>>(_Alloc &,_Objty *const ,const std::piecewise_construct_t &,std::tuple<std::basic_string<char,std::char_traits<char>,std::allocator<char>> &&> &&,std::tuple<> &&)' örneği oluşturma başvurusuna bakın
+          with
+          [
+              _Alloc=std::allocator<std::_List_node<std::pair<const std::string,User>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,User>>>::void_pointer>>,
+              _Ty=std::pair<const std::string,User>,
+              _Objty=std::pair<const std::string,User>
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xhash(702,49): message : derlenen şablon işlevi 'std::_List_node_emplace_op2<std::allocator<std::_List_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer>>>::_List_node_emplace_op2<const std::piecewise_construct_t&,std::tuple<std::basic_string<char,std::char_traits<char>,std::allocator<char>> &&>,std::tuple<>>(_Alnode &,const std::piecewise_construct_t &,std::tuple<std::basic_string<char,std::char_traits<char>,std::allocator<char>> &&> &&,std::tuple<> &&)' örneği oluşturma başvurusuna bakın
+          with
+          [
+              _Ty=std::pair<const std::string,User>,
+              _Alloc=std::allocator<std::pair<const std::string,User>>,
+              _Alnode=std::allocator<std::_List_node<std::pair<const std::string,User>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,User>>>::void_pointer>>
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\unordered_map(265,20): message : derlenen şablon işlevi 'std::pair<std::_List_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer> *,bool> std::_Hash<std::_Umap_traits<_Kty,User,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>::_Try_emplace<std::basic_string<char,std::char_traits<char>,std::allocator<char>>,>(_Keyty &&)' örneği oluşturma başvurusuna bakın
+          with
+          [
+              _Ty=std::pair<const std::string,User>,
+              _Alloc=std::allocator<std::pair<const std::string,User>>,
+              _Kty=std::string,
+              _Hasher=std::hash<std::string>,
+              _Keyeq=std::equal_to<std::string>,
+              _Keyty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\unordered_map(264,18): message : sınıf şablon üye işlevi 'User &std::unordered_map<std::string,User,std::hash<std::string>,std::equal_to<std::string>,std::allocator<std::pair<const std::string,User>>>::operator [](std::basic_string<char,std::char_traits<char>,std::allocator<char>> &&)' derlenirken
+C:\Users\ulasc\source\repos\SecurityAccess\SecurityAccess\SecurityAccess.cpp(43,31): message : 'AccessControlSystem::AccessControlSystem' içinde ilk 'std::unordered_map<std::string,User,std::hash<std::string>,std::equal_to<std::string>,std::allocator<std::pair<const std::string,User>>>::operator []' başvurusuna bakın
+C:\Users\ulasc\source\repos\SecurityAccess\SecurityAccess\SecurityAccess.cpp(39,33): message : derlenen sınıf şablon örneği oluşturma 'std::unordered_map<std::string,User,std::hash<std::string>,std::equal_to<std::string>,std::allocator<std::pair<const std::string,User>>>' başvurusuna bakın
